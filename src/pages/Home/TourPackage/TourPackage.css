@@ -1,0 +1,52 @@
+.tour-package{
+    background-color: #fff;
+    filter: drop-shadow(0 0 0.15rem rgb(51, 49, 49));
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0;
+}
+.tour-package img{
+    transition: .7s;
+}
+.tour-package:hover img{
+    transform: scale(1.5);
+}
+.section-heading{
+    text-align: center;
+    margin: 80px 0;
+}
+.section-heading h5{
+    color: coral;
+    font-size: 30px;
+}
+.section-heading h2{
+    color: rgb(41, 41, 41);
+    font-size: 50px;
+    font-weight: 700;
+}
+.tour-location{
+    color: coral;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.price-and-time h5{
+    color: rgb(41, 41, 41);
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.book-button{
+    border: 1px solid coral;
+    border-radius: 10px;
+    background-color: transparent;
+    color: coral;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: .5s;
+}
+.book-button:hover{
+    background-color: coral;
+    color: #fff;
+}
