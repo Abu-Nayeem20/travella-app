@@ -1,0 +1,25 @@
+
+.slider{
+    background-color: #082032;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+.slider-item h3{
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 25px;
+    color: coral;
+}
+.slider-item h5{
+    font-size: 20px;
+    color: gray;
+}
+.slider-item p{
+    font-size: 16px;
+    color: #fff;
+}
+.slider-img{
+    width: 100px;
+}

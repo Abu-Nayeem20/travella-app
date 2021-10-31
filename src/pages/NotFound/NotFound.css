@@ -1,0 +1,33 @@
+
+.notFound-area{
+    background-image: url('https://i.ibb.co/BsGq2QN/3828537.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding: 100px 0; */
+    height: 160vh;
+    text-align: center;
+}
+
+.not-found-btn{
+    background-color: coral;
+    border: 2px solid coral;
+    padding: 20px 40px;
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 25%;
+    color: #fff;
+    border-radius: 20px;
+    transition: .5s;
+}
+.not-found-btn:hover{
+    background-color: transparent;
+    color: coral;
+}
+
+
+@media (max-width: 768px) {
+    .not-found-btn{
+        font-size: 24px;
+    }
+}

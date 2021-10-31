@@ -1,0 +1,42 @@
+
+.footer-area{
+    background-color: #554a8f;
+    padding: 80px 0 0;
+}
+.title-text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.contact-item, .support-item{
+    color: #fff;
+    font-size: 18px;
+}
+.follow-us{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.follow-us h4{
+    color: aqua;
+    font-size: 36px;
+    font-weight: 700;
+}
+.follow-us i{
+    color: coral;
+    font-size: 30px;
+    margin: 10px;
+}
+.copyright-text{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid grey;
+}
+.copyright-text p{
+    color: coral;
+    font-size: 18px;
+}
+.copyright-text p span{
+    color: aqua;
+    font-size: 18px;
+}

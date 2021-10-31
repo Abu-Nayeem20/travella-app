@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './TourPackage.css';
 
 const TourPackage = (props) => {
-    const {location, thumbnail, desc, duration, price} = props.package;
+    const {_id, location, thumbnail, desc, duration, price} = props.package;
     const shortDesc = desc.slice(0, 130);
     return (
           <div className="col">
@@ -20,7 +20,7 @@ const TourPackage = (props) => {
                 </h5>
             </div>
             <p className="card-text">{shortDesc}...</p>
-            <Link to='/booking'>
+            <Link to={`/booking/${_id}`}>
             <button className='book-button'>Book Now</button>
             </Link>
         </div>

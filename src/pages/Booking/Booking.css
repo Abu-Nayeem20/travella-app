@@ -1,0 +1,72 @@
+
+.booking-form-area{
+    background-image: url('https://i.ibb.co/xSjT0L9/tour-6.jpg');
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    padding: 60px 0;
+}
+.booking-page-title{
+    text-align: center;
+    color: coral;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px 0 30px;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 50px 20px;
+    border-radius: 50px;
+}
+.booking-button{
+    border: 1px solid coral;
+    border-radius: 10px;
+    background-color: coral;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 25px;
+    transition: .5s;
+}
+.booking-button:hover{
+    background-color: transparent;
+    color: coral;
+}
+.booking-package-info{
+    margin: 50px 0;
+}
+.booking-package-info h2{
+    color: coral;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.booking-info{
+    text-align: center;
+    background-color: coral;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.booking-package-info img{
+    transition: .7s;
+}
+.booking-package-info img:hover{
+    transform: scale(1.5);
+}
+.booking-price, .booking-duration{
+    background-color: coral;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.booking-desc{
+    padding: 20px 0;
+    font-size: 20px;
+}

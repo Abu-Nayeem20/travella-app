@@ -27,6 +27,23 @@ body{
     background-color: #a7e0f8;
     border-radius: 5px;
 }
+.profile-icon{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -100%;
+    margin-top: .125rem;
+}
+.dropdown-menu a:hover{
+    background: transparent;
+}
+.fa-thumbs-up{
+    color: coral;
+    font-size: 40px;
+}
  
 /* Responsive */
 @media (max-width: 576px) {

@@ -1,0 +1,20 @@
+.subscribe-area{
+    background-image: url('https://i.ibb.co/fqW8BDk/subscribe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+.hey-user{
+    font-size: 30px;
+    font-weight: 700;
+    color: #ddd;
+    padding: 10px 0;
+}
+.subs-text{
+    color: #193498;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px 0;
+}

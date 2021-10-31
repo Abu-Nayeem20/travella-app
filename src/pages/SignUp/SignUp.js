@@ -4,7 +4,7 @@ import useAuth from '../../Hooks/useAuth';
 
 
 const SignUp = () => {
-    const {user, signInUsingGoogle} = useAuth();
+    const {signInUsingGoogle} = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -15,7 +15,7 @@ const SignUp = () => {
             history.push(redirect_uri);
         })
     }
-    console.log(user);
+    // console.log(user);
     return (
         <div>
             <h2>SIgn up here</h2>

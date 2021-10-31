@@ -7,7 +7,7 @@ const TourPackages = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect( () => {
-        fetch('./data.json')
+        fetch('https://blooming-castle-55027.herokuapp.com/packages')
         .then(res => res.json())
         .then( data => {
             setPackages(data);
@@ -21,7 +21,9 @@ const TourPackages = () => {
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4">
             {
-                packages.map(packag => <TourPackage package={packag}></TourPackage>)
+                packages.map(packag => <TourPackage 
+                    key={packag._id}
+                    package={packag}></TourPackage>)
             }
             </div>
         </div>
