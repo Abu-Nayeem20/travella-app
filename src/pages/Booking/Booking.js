@@ -101,7 +101,7 @@ const Booking = () => {
                 <div className='container'>
                 <div className='booking-package-info'>
                 <h2><i className="fas fa-map-marker-alt"></i> { booking.location}</h2>
-               <h4 className='booking-info'> <i class="fas fa-info"></i> Information</h4>
+               <h4 className='booking-info'> <i className="fas fa-info"></i> Information</h4>
                 <div className='text-center overflow-hidden'>
                     <img src={booking.thumbnail} alt="" />
                 </div>

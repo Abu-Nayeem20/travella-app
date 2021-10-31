@@ -25,3 +25,14 @@
 .whywe-item:hover i{
     transform: rotate(360deg)
 }
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .whywe-item i{
+        font-size: 40px;
+    }
+    .whywe-item h3{
+       font-size: 20px;
+    }
+}

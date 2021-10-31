@@ -53,6 +53,7 @@
 }
 .booking-package-info img{
     transition: .7s;
+    width: 100%;
 }
 .booking-package-info img:hover{
     transform: scale(1.5);
@@ -69,4 +70,28 @@
 .booking-desc{
     padding: 20px 0;
     font-size: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .booking-page-title{
+        font-size: 40px;
+    }
+    .booking-package-info h2{
+        font-size: 30px;
+    }
+    .booking-info{
+        padding: 15px 30px;
+        font-size: 25px;
+    }
+    .booking-price, .booking-duration{
+        padding: 5px;
+        background-color: transparent;
+        font-size: 20px;
+        color: coral;
+    }
+    .booking-desc{
+        font-size: 16px;
+    }
 }

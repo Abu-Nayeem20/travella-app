@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useRef } from 'react';
 import { Modal } from 'react-bootstrap';
 import Subscribe from '../Shared/Subscribe/Subscribe';
+import './AddPackage.css';
 
 const AddPackage = () => {
     const locationRef = useRef();
@@ -41,9 +42,17 @@ const AddPackage = () => {
     
     return (
         <div>
-            <div className='w-50 mx-auto'>
-            <h2 className='text-center py-5'>Add Package</h2>
-            <form onSubmit={handleAddPackage}>
+            <div className='booking-page-top'>
+            <h2>Add Package</h2>
+            <p>Here Admin Can Add New Tour Package.</p>
+            </div>
+            <div className='container'>
+                <div className='add-tour-info-title'>
+                <h2><i className="fas fa-info"></i> Add Tour Information</h2>
+                </div>
+                <div className='row'>
+                <div className='col-md-8 offset-md-2'>
+                <form onSubmit={handleAddPackage} className='tour-adding-form'>
                 <input className='w-100 mb-3' type="text" ref={locationRef} placeholder='Location' required />
                 <br />
                 <input className='w-100 mb-3' type="text" ref={durationRef} placeholder='Duration' required />
@@ -53,8 +62,10 @@ const AddPackage = () => {
                 <input className='w-100 mb-3' type="text" ref={thumbnailRef} placeholder='Thumbnail Image' required />
                 <br />
                 <textarea className='w-100 mb-3' cols="30" rows="10" ref={descRef} placeholder='Description' required></textarea>
-                <input type="submit" value="Add" />
+                <input className='package-add-btn' type="submit" value="ADD PACKAGE" />
             </form>
+                </div>
+                </div>
             <Modal
                 size="sm"
                 show={smShow}

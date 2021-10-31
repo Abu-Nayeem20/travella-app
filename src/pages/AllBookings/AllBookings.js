@@ -37,8 +37,11 @@ const AllBookings = () => {
 
     return (
         <div>
-            <div className='container'>
-            <h2 className='text-center'>All bookings will display here</h2>
+            <div className='booking-page-top'>
+            <h2>All Booooooookings History</h2>
+            <p>Here All Bookings list of Travella. Admin Can Approve Pending Bookings.</p>
+            </div>
+            <div className='container my-5'>
             <Row xs={1} md={2} className="g-4">
             {
                 bookings.map(booking => <AllBooking

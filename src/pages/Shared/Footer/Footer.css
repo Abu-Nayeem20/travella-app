@@ -40,3 +40,20 @@
     color: aqua;
     font-size: 18px;
 }
+
+/* Responsive */
+
+@media (max-width: 576px) {
+    .follow-us h4{
+        font-size: 30px;
+    }
+    .follow-us i{
+        font-size: 25px;
+    }
+    .copyright-text p{
+        font-size: 14px;
+    }
+    .copyright-text p span{
+        font-size: 14px;
+    }
+}

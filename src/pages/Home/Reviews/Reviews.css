@@ -23,3 +23,20 @@
 .slider-img{
     width: 100px;
 }
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .slider-item h3{
+        font-size: 20px;
+    }
+    .slider-item h5{
+        font-size: 16px;
+    }
+    .slider-item p{
+        font-size: 14px;
+    }
+    .slider-img{
+        width: 80px;
+    }
+}

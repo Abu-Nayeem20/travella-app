@@ -50,3 +50,20 @@
     background-color: coral;
     color: #fff;
 }
+
+ /* Responsive */
+
+@media (max-width: 768px) {
+    .section-heading h5{
+        font-size: 20px;
+    }
+    .section-heading h2{
+        font-size: 30px;
+    }
+    .price-and-time h5{
+        font-size: 16px;
+    }
+    .tour-location{
+        font-size: 22px;
+    }
+}

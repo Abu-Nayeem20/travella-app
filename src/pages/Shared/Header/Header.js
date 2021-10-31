@@ -23,14 +23,17 @@ const Header = () => {
                 <Nav className="menu-items">
                 <Nav.Link as={NavLink} activeStyle={activeStyle} to="/home">Home</Nav.Link>
                 <Nav.Link as={HashLink} to="/home#packages">Our Packages</Nav.Link>
-                <Nav.Link as={NavLink} activeStyle={activeStyle} to="/contact">Contact</Nav.Link>
+                { user?.email &&
+                    <NavDropdown title='Dashboard' id="collasible-nav-dropdown">
+                    <NavDropdown.Item as={Link} to='/myBookings'>My Booking</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to='/addPackage'>Add New Package</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to='/manageAllBookings'>Manage All Bookings</NavDropdown.Item>
+                  </NavDropdown>
+                }
                 { user?.email ?
                     <NavDropdown title={<img className='profile-icon' src={user?.photoURL} alt="" />} id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#">{user?.displayName}</NavDropdown.Item>
                     <NavDropdown.Item href="#">{user?.email}</NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to='/myBookings'>My Booking</NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to='/addPackage'>Add New Package</NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to='/manageAllBookings'>Manage All Bookings</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item><button onClick={logOut} className='btn btn-danger'>Logout</button></NavDropdown.Item>
                   </NavDropdown>

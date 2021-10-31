@@ -3,6 +3,7 @@ import { Modal, Row } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
 import Subscribe from '../Shared/Subscribe/Subscribe';
 import MyBooking from './MyBooking';
+import './MyBookings.css';
 
 const MyBookings = () => {
     const [allBookings, setAllBookings] = useState([]);
@@ -44,10 +45,10 @@ const MyBookings = () => {
     return (
         <div>
             <div className='booking-page-top'>
-            <h2 className='text-center'>My Boooooooooookings</h2>
+            <h2>My Boooooooookings History</h2>
+            <p>I have a long journey with Travella and here is my journey history.</p>
             </div>
-            <div className='container'>
-            <h2 className='text-center'>My Boooooooooookings</h2>
+            <div className='container my-5'>
             <Row xs={1} md={2} className="g-4">
             {
                 filterMyBooking.map(mybooking => <MyBooking

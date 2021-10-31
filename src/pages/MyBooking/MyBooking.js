@@ -4,10 +4,10 @@ import { Card, Col, Table } from 'react-bootstrap';
 const MyBooking = (props) => {
     // console.log(props)
     const {_id, name, email, phone, date, duration, person, location, price, status, ticket, comment} = props.booking;
-    // const {handleCancelBooking} = props.handleCancel;
+    
     return (
              <Col>
-             <Card className='bg-dark'>
+             <Card className='bg-dark overflow-scroll'>
                  <Card.Body>
                  <Card.Title className='text-light text-center fs-3 fw-bold py-3'>{location}</Card.Title>
                  <div>

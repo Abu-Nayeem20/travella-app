@@ -4,7 +4,6 @@ import AuthProvider from './Context/AuthProvider';
 import AddPackage from './pages/AddPackage/AddPackage';
 import AllBookings from './pages/AllBookings/AllBookings';
 import Booking from './pages/Booking/Booking';
-import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login';
 import MyBooking from './pages/MyBooking/MyBookings';
@@ -27,9 +26,6 @@ function App() {
       <Route path='/home'>
         <Home></Home>
       </Route>
-      <PrivateRoute path='/contact'>
-        <Contact></Contact>
-      </PrivateRoute>
       <PrivateRoute path='/booking/:packageId'>
         <Booking></Booking>
       </PrivateRoute>
