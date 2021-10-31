@@ -7,7 +7,7 @@ const MyBooking = (props) => {
     
     return (
              <Col>
-             <Card className='bg-dark overflow-scroll'>
+             <Card className='bg-dark overflow-hidden'>
                  <Card.Body>
                  <Card.Title className='text-light text-center fs-3 fw-bold py-3'>{location}</Card.Title>
                  <div>

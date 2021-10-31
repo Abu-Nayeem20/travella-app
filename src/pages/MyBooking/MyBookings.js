@@ -48,6 +48,9 @@ const MyBookings = () => {
             <h2>My Boooooooookings History</h2>
             <p>I have a long journey with Travella and here is my journey history.</p>
             </div>
+            {filterMyBooking.length === 0 &&
+            <h2 className="text-center text-warning py-5">You Haven't Booked Yet</h2>
+            }
             <div className='container my-5'>
             <Row xs={1} md={2} className="g-4">
             {

@@ -31,7 +31,7 @@ const Booking = () => {
         });
     }, []);
 
-    console.log(booking)
+    // console.log(booking)
 
     const handleBooking = e => {
         const name = user.displayName;
